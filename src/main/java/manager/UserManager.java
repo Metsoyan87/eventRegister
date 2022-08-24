@@ -26,7 +26,7 @@ public class UserManager {
         ResultSet resultSet = preparedStatement.getGeneratedKeys();
         if (resultSet.next()) {
             int id = resultSet.getInt(1);
-            user.setId(1);
+            user.setId(id);
         }
     }
 
