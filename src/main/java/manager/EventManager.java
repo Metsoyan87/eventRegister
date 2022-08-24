@@ -31,7 +31,7 @@ public class EventManager {
         ResultSet resultSet = preparedStatement.getGeneratedKeys();
         if (resultSet.next()) {
             int id = resultSet.getInt(1);
-            event.setId(1);
+            event.setId(id);
         }
     }
 
